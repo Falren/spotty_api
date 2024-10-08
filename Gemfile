@@ -16,6 +16,8 @@ gem "puma", ">= 5.0"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
+gem "dotenv", groups: [ :development, :test ]
+gem "rspotify"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
@@ -40,4 +42,7 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 end
 
-
+gem "devise-jwt", "~> 0.12.1"
+gem "devise", "~> 4.9"
+gem "active_model_serializers", "~> 0.10.14"
+gem "pry"
